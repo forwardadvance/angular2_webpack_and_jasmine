@@ -1,9 +1,10 @@
 module.exports = {
   entry: {
-    'app': './source/app.js'
+    'app': './source/app.js',
+    'specs': './source/specs.js'
   },
   output: {
-    filename: './build/app.js',
+    filename: './build/[name].js',
   },
   sourceMap: true,
   resolve: {
@@ -11,7 +12,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader' }
+      { app: /\.js$/, loader: 'babel-loader' }
     ]
   }
 };
