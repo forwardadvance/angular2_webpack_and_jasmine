@@ -1,6 +1,6 @@
-var core = require('@angular/core');
+var {Component} = require('@angular/core');
 
-module.exports = core.Component({
+module.exports = Component({
   selector: "app",
   template:
   `
@@ -9,8 +9,5 @@ module.exports = core.Component({
 })
 .Class({
   constructor: function() {
-    this.isHidden = true;
-    this.x = 'test';
-    this.color = 'blue';
   }
 })
