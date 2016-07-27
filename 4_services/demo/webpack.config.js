@@ -3,7 +3,7 @@ module.exports = {
     'app': './source/app.js'
   },
   output: {
-    filename: './build/[name].js',
+    filename: './build/app.js',
   },
   sourceMap: true,
   resolve: {

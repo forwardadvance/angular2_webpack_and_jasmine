@@ -1,5 +1,5 @@
 module.exports = {
   miow: function() {
-    return 'Miow';
+    return 'Woof';
   }
 };

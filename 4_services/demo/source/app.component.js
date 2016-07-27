@@ -9,9 +9,12 @@ module.exports = core.Component({
   `
 })
 
-.Class([UserService, {
-  constructor: function(UserService) {
-    this.user = UserService.get();
-  }
-}])
+.Class({
+  constructor: [
+    UserService,
+    function(UserService) {
+      this.user = UserService.get();
+    }
+  ]
+});
 
